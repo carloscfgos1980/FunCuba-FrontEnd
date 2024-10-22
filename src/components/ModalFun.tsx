@@ -29,17 +29,15 @@ const ModalFun = ({
   airId,
 }: any) => {
   const { feedbacks }: any = useAppSelector((state) => state.filteredFeedbacks);
-  console.log("feeds", feedbacks, typeof feedbacks);
-
+  
   const selectedFeeds = feedbacks.filter((feed: any) => {
-    return feed.airId === airId;
+    return feed.feedId === airId;
   });
-
-  console.log("selectedFeeds:", selectedFeeds);
 
   const feedback1 = selectedFeeds[0];
   const feedback2 = selectedFeeds[1];
   const feedback3 = selectedFeeds[2];
+
 
   const itemSrc = `${process.env.PUBLIC_URL}/imagesAir/${img}`;
 
@@ -85,24 +83,24 @@ const ModalFun = ({
                 <div className="modalCarousel justify-content-center col-sm-10">
                   <CarouselAirDetails items={items} />
                 </div>
-                <div>
-                  <h1 className="text-center">FEEDBACKS</h1>
-                  {feedbacks ? (
-                    <div className="row">
-                      <div className="col-sm-4">
-                        <Reviews feedback={feedback1} />
-                      </div>
-                      <div className="col-sm-4">
-                        <Reviews feedback={feedback2} />
-                      </div>
-                      <div className="col-sm-4 mb-3">
-                        <Reviews feedback={feedback3} />
-                      </div>
-                    </div>
-                  ) : (
-                    <p>No Reviews</p>
-                  )}
+          <div className="reviews">
+            <h1 className="text-center">FEEDBACKS</h1>
+            {feedbacks ? (
+              <div className="row">
+                <div className="col-sm-4">
+                  {feedback1 && <Reviews feedback={feedback1}/>}                  
                 </div>
+                <div className="col-sm-4">
+                  {feedback2 && <Reviews feedback={feedback2} />}                  
+                </div>
+                <div className="col-sm-4 mb-3">
+                  {feedback3 && <Reviews feedback={feedback3} />}                  
+                </div>
+              </div>
+            ) : (
+              <p>No Reviews</p>
+            )}
+          </div>
               </div>
             </Typography>
           </div>

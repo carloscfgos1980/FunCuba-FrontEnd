@@ -13,16 +13,16 @@ import {
   commitChanges,
   editRoute,
 } from "../../redux/filteredTripPlan";
-import FormSelect from "../../components/FormSelect";
 import CheckBoxComponent from "../../components/CheckBoxComponent";
 import AddAirB from "../../components/AddAirB";
 import AddChilling from "../../components/AddChilling";
 import pagesContent from "../../components/contentText/pagesContent";
 import ModalTrip from "../../components/ModalTrip";
 import FormClient from "../../components/FormClient";
+import FormSelectItem from "../../components/FormSelectItem";
 
 const TripPlan = () => {
-  const [cityId, setCityId] = useState<string>("1");
+  const [cityId, setCityId] = useState<string>("Havana");
   const [display1, setDisplay1] = useState<string>("none");
   const [key, setKey] = useState(0);
   const TripText1 = pagesContent.tripPlan.intro1;
@@ -164,7 +164,7 @@ const TripPlan = () => {
           </div>
           {edit === false && (
             <div className="get-city d-flex">
-              <FormSelect getCityId={getCityId} items={citiesData} />
+              <FormSelectItem getItemId={getCityId} items={citiesData} />
               <button className="btn btn-success" onClick={getDestination}>
                 select destination
               </button>

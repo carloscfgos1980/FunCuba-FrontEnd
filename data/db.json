@@ -93,7 +93,9 @@
       "feedId": "domino",
       "type": "chill",
       "rate": 3,
-      "comment": "lo maximo"
+      "comment": "lo maximo",
+      "author": "Maikol",
+      "country": "Mexico"
     },
     {
       "id": "13",

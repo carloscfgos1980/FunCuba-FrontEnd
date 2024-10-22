@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Cuba from "../../components/Cuba";
-import FormSelect from "../../components/FormSelect";
 import CarouselAir from "../../components/CarouselAir";
 import citiesData from "../../components/contentText/citiesData";
 import airData from "../../components/contentText/airData";
 import ModalFun from "../../components/ModalFun";
 import havana from "../../components/imagesPages/havana.jpg";
 import pagesContent from "../../components/contentText/pagesContent";
+import FormSelectItem from "../../components/FormSelectItem";
 
 type AirBB = {
   idAirB: string;
@@ -34,12 +34,9 @@ type SelectedAirB = {
 };
 
 const AirB = () => {
-  const [cityId, setCityId] = useState<string>("1");
+  const [cityId, setCityId] = useState<string>("Havana");
   const [airId, setAirId] = useState<string>("lalita");
   const [modal, setModal] = useState<boolean>(false);
-  // I will create a hard code variable coz the database with the feedbacks collection is not complete
-  const airIddd = "lalita";
-
   const getCityId = (value: string): void => setCityId(value);
 
   const selectedCity: SelectedCity | any = citiesData.find(
@@ -62,13 +59,13 @@ const AirB = () => {
   return (
     <div className="container-fluid bg-light py-3">
       <div className="row justify-content-center">
-        <Cuba img={havana} text={pagesContent.cuba} />
-        <FormSelect getCityId={getCityId} items={citiesData} />
+        <Cuba img={havana} text={pagesContent.airBnBIntro} />
+        <FormSelectItem getItemId={getCityId} items={citiesData}/> 
         <ModalFun
           modal={modal}
           toggle={toggle}
           name={selectedAirB.name}
-          airId={airIddd}
+          airId={airId}
           img={selectedAirB.locationImg}
           items={selectedAirB.airB}
           modalGetAidId={modalGetAidId}

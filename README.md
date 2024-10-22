@@ -370,4 +370,16 @@ the post function of review is place in the store (filteredFeedbacks.ts)
 **Home Page**
 This part was fairly easy. I just need to implement tooltip from material UI and create a new Modal (ModalTipsCuba) in order to place the tips and not make the page too long
 
-new new new
+# 22/10/2024
+
+- Working on the content.
+- I delete the city propoerty from citiesData and renmae "id" with the value of "city". I need to make the adjustment in AirB.tsx as well.
+- I also delete component FormSelect. I don't need it anymore since I only use FormSelectItem
+
+**pending**
+airId={airIddd}
+this is a fix value I have for the reviews until I fell the reviews... tomorrow...
+
+- Actually I fixed today. I had to create a conditional rendereing for the reviews so I won't get an error when the reviews are not there
+
+- I fix Cuba component, now the image is inside <p> so I can float it to the right and I don't need to worry about the paraph

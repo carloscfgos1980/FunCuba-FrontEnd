@@ -1,12 +1,20 @@
 const chillingData = [
   {
+    id: "Havana_tour",
+    price: 50,
+    city: "Havana",
+    name: "Havana City tour",
+    image: "havana-old_havana.jpg",
+    description: "The price is a package for 5 person. The clients get to choose where in Havana want to go and the time. The itinerary last 3 hours. You can choose walking or riding a very nice old American Car. The price of the taxi is not included, that you will have to negotiate yourself with the help of our guide so you get the best deal. We recomend you to visit the graveyard, Callejon de Hamet and Old Havana.",
+  },
+  {
     id: "gampara",
     price: 50,
     city: "Havana",
     name: "Guampara Music Studios",
     image: "havana-guampara.jpeg",
     description:
-      "isiting DJ Jigüe's studio. Guampara is a unique opportunity to dive into the heart of Havana's underground music scene. As the founder of Guampara Music, DJ Jigüe has established this independent label as a beacon for Afro-Cuban music, blending traditional rhythms with contemporary electronic sounds Engage in conversations about the evolution of Cuban music and how Guampara Music is reshaping the industry landscape, particularly for young artists in Havana Depending on the schedule, you might witness live music sessions or production demonstrations, showcasing the fusion of traditional and modern sounds that define Guampara Guampara Music is more than just a record label; it represents a movement toward the recognition of Afro-Cuban culture and contemporary urban sounds. By visiting DJ Jigüe's studio, you are stepping into a space where innovation meets tradition, and where the future of Cuban music is being forged",
+      "Guampara is a unique opportunity to dive into the heart of Havana's underground music scene. DJ Jigüe has established this independent label as a beacon for Afro-Cuban music, blending traditional rhythms with contemporary electronic sounds. Guampara, serves not only as a creative workspace but also as a cultural hub for emerging artists. The label focuses on promoting a diverse range of genres, including hip-hop, dancehall, and electronic music, all while honoring the rich heritage of Cuban music. Unique perspective on the music-making process, and engage in conversations about the evolution of Cuban music",
   },
   {
     id: "bleco",
@@ -44,22 +52,13 @@ const chillingData = [
     description:
       "Once you’ve satisfied your hunger, it’s time to hit Club 23, one of Havana’s hottest nightclubs. This place is where the party kicks off, with a mix of live music and DJs spinning the latest reggaeton and salsa tracks. The energy is electric, and the dance floor is packed with locals and travelers alike, all ready to let loose. Don’t be surprised if you find yourself dancing until the sun comes up—this place knows how to keep the party going. This itinerary is your ticket to experiencing the raw, vibrant nightlife of Havana, blending art, music, and mouthwatering food into one unforgettable night. Get ready to make some memories!",
   },
-  {
-    id: "tour colonial",
-    price: 40,
-    city: "Havana",
-    name: "Tour Colonial",
-    image: "havana-old_havana.jpg",
-    description: "Recorrido por el Centro Histórico de la Habana",
-  },
-  {
-    id: "old_cars",
+    {
+    id: "cienfuegos_tour",
     price: 50,
-    city: "Havana",
-    name: "Tour Habaneando",
-    image: "havana-tour_old_cars.jpg",
-    description:
-      "se realiza en carros convertibles. ( Recorridos por los repartos residenciales de la ciudad)",
+    city: "Trinidad",
+    name: "Cienfuegos city tour",
+    image: "cfgos_punta.jpeg",
+    description: "Cienfuegos is has a beatiful architecture combined with the awesome sea landscape. The tour start at Parque Marti (main square) and then you jump  either horse ride or bicitaxi that drives thru the malecon to La Punta (thing piece of land rounded by the sea). In the way there I suggest you pay a visit to Palacio del Valle (one of the most impressive building in Cuba). This will last 3 hours. No rush, you are in holiday, you can stop anywhere to get a cold drink while enjoy. Yadira will tell you everything you need to know about the city. She is very passionated about it.",
   },
   {
     id: "domino",
@@ -67,25 +66,23 @@ const chillingData = [
     city: "Cienfuegos",
     name: "Dale agua al domino",
     image: "cienfuegos-domino.webp",
-    description:
-      "Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino Domino ",
+    description: "If you really wanna experience Cuban reality, then you need to be part of the domino scene. It is more than a game. It is a social gathering. People come together with the excuse of playing but it is more a place to share with friends stories and jokes. A good domino game must have at least a bottle of rum. The game could last the whole day. Free time is the only thing that is in abundance in Cuba. We will provide you 2 or 3 players since you need 4 people to play and they will explain you how the game goes. The price you pay includes the cubalibres's and some beverage.",
   },
   {
     id: "sailing",
-    price: 40,
+    price: 150,
     city: "Cienfuegos",
     name: "Fun Sailing",
     image: "cienfuegos-bote.jpg",
-    description:
-      "Gozadera en la bahia Gozadera en la bahia Gozadera en la bahia Gozadera en la bahia Gozadera en la bahia Gozadera en la bahia Gozadera en la bahia Gozadera en la bahia Gozadera en la bahia Gozadera en la bahia Gozadera en la bahia Gozadera en la bahia Gozadera en la bahia ",
+    description: "This is something that very few tourist has done. You'll be sailing in a local fisherman little boat, it can not host more than 8 persons. It will last 6 hours. So you leave 10 am and comeback at 4 pm. You be touring Cienfuegos bay and visiting virgin beaches than only be reached by boat. You can fish if you want and also make a stop in a local restaurant in the fishermen's little town (El Castilllo). There you can tasty the most fress seafood you would have in Cuba.",
   },
   {
     id: "nicho",
-    price: 100,
+    price: 150,
     city: "Cienfuegos",
     name: "Nicho: Amazing waterfalls and more",
     image: "cienfuegos-nicho.jpeg",
-    description: "Nicho, almuerzo con los guajiros, paseo a caballo",
+    description: "This is one the top tourist site in Cuba. It´s a beautiful natural part located in “El Escambray” mountains. You need to drive with a Taxi there, it takes 45 minutes approximately. It would last approximately 6 hours. You can enjoy in the crystal water of rio “Negro”, hike around the park, once you done you can enjoy a delitious meal prepared by the local farmers, the price is around 5 euros and you might not be able to finish, they are very generous in their meal portions!",
   },
   {
     id: "painting",
@@ -93,15 +90,15 @@ const chillingData = [
     city: "Cienfuegos",
     name: "Colour yourself",
     image: "cienfuegos-painting.jpeg",
-    description: "Talleres de pintura",
+    description: "Cuba is a place full of creative people, art and music is part of our sould. You can get a taste of that by signing on in this painting workshop. Inmaray is a talented artist who has a very good draw technique. You can do your first steps in art worl or steop up on your game, it´s up to you. Lessons last 1 hour. The price is per person.",
   },
   {
-    id: "salsa",
+    id: "muevelo",
     price: 50,
     city: "Cienfuegos",
-    name: "Menealo",
+    name: "Muevelo, muevelo",
     image: "cienfuegos-salsa.jpg",
-    description: "Salsa and reggaeton workshop",
+    description: "Oh.. yeah... if you wanna impress your friends after your holidays in Cuba, you must improve the movement in those hips. Richard will make sure that become a reality. This workshop is mostly salsa and reggaeton nevertheless as client you can choose a different rhythm, Cuba musical culture is very reach!",
   },
   {
     id: "ellegua",
@@ -109,24 +106,23 @@ const chillingData = [
     city: "Trinidad",
     name: "Ellegau guides me!",
     image: "trinidad-bar.jpg",
-    description:
-      "Trour por los bares de la ciudad de Trinidad con un gu[ia vestido y actuando como Ellegua",
+    description: "Ellegua is a Afrocuban deity. It represents the beguining of new opportunities and could lead thru a good or bad path. Our ellegua will lead thru a very nice one. He know the city. You will we following him to the best 5 bars in Trinidad and taking shots there!. The price is only for the Ellegua, you have to pay the drinks yourself and if you fell generous, you should invite some Cubans, that would be a very nice evening",
   },
   {
-    id: "deep_trinidad",
+    id: "trinidad_tour",
     price: 50,
     city: "Trinidad",
-    name: "Deep Trinidad",
+    name: "Trinidad off route",
     image: "trinidad-candonga.jpeg",
-    description: "Meet how Cubas trully live",
+    description: "Usually tourist are lead, just a herd of sheep thru, along the tourist route. They are not really interested to show you the Real Cuba... well... we do... Pedrito will provide you some suggestions and you make the pick... you're gonna be your own boss.",
   },
   {
-    id: "cooking",
+    id: "todo-sabor",
     price: 50,
     city: "Trinidad",
-    name: "It is Cooking time!",
+    name: "Todo sabor",
     image: "trinidad-cooking",
-    description: "Let's cook together a genuine Cuban meal",
+    description: "Trinidad is one the best place to taste Cuban and International Cuisine. Chef Pedrito will teach you how to cook with “punto cubano”. You'll impress your friends back home, Cuban recipe are just like everything else, joyful and sexy. And we wanna spice it this even more. You'll get the groceries yourself and the budget can not exceed a Cuban month salary. Our chef will guide thru the whole process. Once the meal is done, you will share it with some neighbor family and they will decide if that is a true Cuban meal... how about that?",
   },
   {
     id: "cigar",
