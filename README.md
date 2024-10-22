@@ -1,4 +1,9 @@
-9/09/2024
+## Fun Cuba (client)
+
+website:
+https://fun-cuba.vercel.app
+
+# 9/09/2024
 
 # 1. Create the app:
 

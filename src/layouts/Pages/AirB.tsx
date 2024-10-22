@@ -76,12 +76,14 @@ const AirB = () => {
         </div>
         <div className="row justify-content-around mt-3 g-3">
           <div className="carousel col-sm-5 ">
-            <p className="text-danger text-center d-block d-sm-none">
-              wide images and
-            </p>
-            <p className="text-danger text-center">
-              click 'em' for Air B&B's details!
-            </p>
+            <div className="d-flex ms-3">
+              <p className="text-danger text-center d-block d-sm-none">
+                wide images and
+              </p>
+              <p className="text-danger text-center">
+                click 'em' for Air B&B's details!
+              </p>
+            </div>
             <CarouselAir
               items={selectedCity.airB}
               modalGetAidId={modalGetAidId}

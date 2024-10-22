@@ -35,7 +35,7 @@ const Home = () => {
             <div className="col-10 col-sm-7">
               <p className="lead">{home.intro} </p>
               <div className="d-flex">
-                <span className="mx-5 px-5">
+                <span className="mx-2 px-2">
                   <CustomWidthTooltip title={home.tooltipAirB}>
                     <Button sx={{ m: 1 }}>Airbnb booking</Button>
                   </CustomWidthTooltip>
@@ -48,7 +48,7 @@ const Home = () => {
                     <Button sx={{ m: 1 }}>Guidance</Button>
                   </CustomWidthTooltip>
                   <CustomWidthTooltip title={home.tooltipChill}>
-                    <Button sx={{ m: 1 }}>Chill Out activities</Button>
+                    <Button sx={{ m: 1 }}>Chill Outs</Button>
                   </CustomWidthTooltip>
                 </span>
               </div>
